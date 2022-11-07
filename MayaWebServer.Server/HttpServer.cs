@@ -55,7 +55,7 @@ namespace MayaWebServer.Server
 
                 Console.WriteLine(response.ToString());
 
-                //await WriteResponse(networkStream);
+                
                 await WriteResponse(networkStream, response);
                 connection.Close();
             }
